@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Starting local development environment..."
+
+docker compose up -d --remove-orphans
+
+# Clear all caches in development
+echo "🧹 Clearing development caches..."
+docker compose exec -T phpfpm php artisan config:clear
+docker compose exec -T phpfpm php artisan route:clear
+docker compose exec -T phpfpm php artisan view:clear
+
+echo "✅ All services started successfully!"
+
+echo "🌐 Local application: http://localhost:8000"
+echo "📧 Mailpit dashboard: http://localhost:8025"
+echo "⚡ Vite dev server: http://localhost:5173"
