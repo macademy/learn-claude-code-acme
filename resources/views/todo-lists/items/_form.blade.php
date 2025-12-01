@@ -16,7 +16,7 @@
         type="date"
         name="due_date"
         value="{{ isset($item) && $item->due_date ? $item->due_date->format('Y-m-d') : '' }}"
-        class="w-full sm:w-auto px-3 py-3 text-base bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:text-white dark:[color-scheme:dark]"
+        class="w-full sm:w-auto px-3 py-3 text-base bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:text-white"
     >
     <button
         type="submit"
