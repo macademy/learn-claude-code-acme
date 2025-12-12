@@ -57,7 +57,7 @@
                     name="name"
                     placeholder="New List"
                     required
-                    class="flex-1 px-3 py-3 text-base bg-gray-100 dark:bg-gray-700 border-0 rounded-lg focus:ring-2 focus:ring-blue-500 dark:text-white"
+                    class="flex-1 min-w-0 px-3 py-3 text-base bg-gray-100 dark:bg-gray-700 border-0 rounded-lg focus:ring-2 focus:ring-blue-500 dark:text-white"
                 >
                 <button
                     type="submit"
